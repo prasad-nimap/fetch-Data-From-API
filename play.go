@@ -56,10 +56,10 @@ func main() {
 	}
 	filePath := os.Args[1]
 
-	url := "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/country"
-	country := "Canada"
+	url := "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/"
+	country := "Camada"
 
-	req, err := http.NewRequest("GET", url+"?country="+country, nil)
+	req, err := http.NewRequest("GET", url+"total?country="+country, nil)
 	if err != nil {
 		fmt.Printf("Error creating request: %s\n", err)
 		return
